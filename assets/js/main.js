@@ -21,18 +21,6 @@ const links = document.querySelectorAll('.nav-link');
 // });
 
 
-// showing and hiding links and drop down
-const dropLink = document.querySelector('.drop-link');
-const dropAbout = document.querySelector('.drop-about');
-const dropMenu = document.querySelector('.drop-menu');
-dropAbout.addEventListener('click', () => {
-    dropMenu.style.display = 'none';
-})
-
-dropLink.addEventListener('mousedown', () => { 
-    dropMenu.style.display = 'block';
-})
-
 // date
 const date = document.querySelector('.date');
 date.innerHTML = new Date().getFullYear();
