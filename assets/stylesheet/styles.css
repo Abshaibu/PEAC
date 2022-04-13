@@ -1,5 +1,5 @@
 /* Global styles */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -273,22 +273,44 @@ section {
     padding-bottom: 2rem;
 }
 
+.services-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .service-card {
+    width: 48%;
     background-color: #fff;
     padding: 1.5em;
-    text-align: center;
     border-radius: 5px;
-    box-shadow: 0 0px 1.4px rgb(0 0 0 / 2%),
-        0 0px 3.8px rgb(0 0 0 / 3%),
-        0 0px 9px rgb(0 0 0 / 4%),
-        0 0px 30px rgb(0 0 0 / 6%);
-    max-width: 600px;
     margin: 0 auto 3rem;
+}
+
+.service-card:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+    0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07),
+    0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.service-img {
+    width: 120px;
 }
 
 .service-title {
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.service-card ul {
+    padding-left: 2rem;
+}
+
+.service-card li {
+    list-style: disc;
 }
 
 .contact-wrapper {
@@ -338,17 +360,6 @@ footer a {
 }
 
 /*  Media Queries */
-@media(min-width: 1040px) {
-    .services-container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .service-card {
-        max-width: 295px;
-    }
-}
-
 @media screen and (max-width: 768px) {
     footer a {
         font-size: .8rem;
@@ -400,5 +411,15 @@ footer a {
 
     a {
         font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
     }
 }
