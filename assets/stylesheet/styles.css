@@ -39,9 +39,30 @@ a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    font-weight: 500;
     text-transform: capitalize;
     transition: all 0.3s ease-in;
+}
+
+button {
+    display: inline-block;
+    background-color: #fff;
+    border: none;
+    font-family: 'Raleway',
+        sans-serif;
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+button:hover {
+    background-color: var(--ltblue);
+    color: #fff;
 }
 
 nav {
@@ -53,6 +74,7 @@ nav {
     display: inline-block;
     position: relative;
     color: #fff;
+    font-size: .95rem;
 }
 
 .nav-link:after {
@@ -83,8 +105,13 @@ header,
 footer,
 .footer-nav,
 .nav-items,
-.nav-container {
+.nav-container,
+.reach-wrapper {
     display: flex;
+}
+
+.chat-btn {
+    padding: .8rem 1.5rem;
 }
 
 .nav-items,
@@ -139,7 +166,7 @@ header {
     background: var(--black);
     position: fixed;
     width: 100%;
-    height: 70px;
+    height: 80px;
     top: 0;
     border-bottom: 1px solid grey;
     z-index: 9999;
@@ -288,11 +315,11 @@ section {
 
 .service-card:hover {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
-    0 2px 4px rgba(0, 0, 0, 0.07),
-    0 4px 8px rgba(0, 0, 0, 0.07),
-    0 8px 16px rgba(0, 0, 0, 0.07),
-    0 16px 32px rgba(0, 0, 0, 0.07),
-    0 32px 64px rgba(0, 0, 0, 0.07);
+        0 2px 4px rgba(0, 0, 0, 0.07),
+        0 4px 8px rgba(0, 0, 0, 0.07),
+        0 8px 16px rgba(0, 0, 0, 0.07),
+        0 16px 32px rgba(0, 0, 0, 0.07),
+        0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
 .service-img {
@@ -342,6 +369,48 @@ section {
 }
 
 /* Products */
+
+.reach-us {
+    min-height: 50vh;
+    align-items: center;
+    display: flex;
+}
+
+.reach-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+
+.reach-us-content {
+    max-width: 550px;
+    width: 100%;
+    background: #FFEAA7;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+        0 2px 4px rgba(0, 0, 0, 0.07),
+        0 4px 8px rgba(0, 0, 0, 0.07),
+        0 8px 16px rgba(0, 0, 0, 0.07),
+        0 16px 32px rgba(0, 0, 0, 0.07),
+        0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.reach-btn {
+    max-width: 170px;
+    width: 70%;
+    background: var(--ltblue);
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.reach-btn:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25),
+        0 2px 2px rgba(0, 0, 0, 0.20),
+        0 4px 4px rgba(0, 0, 0, 0.15),
+        0 8px 8px rgba(0, 0, 0, 0.10),
+        0 16px 16px rgba(0, 0, 0, 0.05);
+}
 
 /*   Footer*/
 
@@ -411,6 +480,10 @@ footer a {
 
     a {
         font-size: .8rem;
+    }
+
+    .chat-btn {
+        padding: .6rem 1.2rem;
     }
 }
 
