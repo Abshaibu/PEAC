@@ -47,10 +47,13 @@ button {
     display: inline-block;
     background-color: #fff;
     border: none;
+}
+
+button,
+.product-btn {
+    border: none;
     font-family: 'Raleway',
-        sans-serif;
-    font-family: 'Raleway',
-        sans-serif;
+    sans-serif;
     font-weight: 500;
     font-size: 1rem;
     padding: 0.8rem;
@@ -234,6 +237,17 @@ section {
     opacity: .9;
 }
 
+.second-home {
+    min-height: 30vh;
+    background-image: url('../images/placeholder.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    place-items: center;
+    display: grid;
+}
+
+
+
 .intro {
     justify-content: center;
     align-items: center;
@@ -340,6 +354,19 @@ section {
     list-style: disc;
 }
 
+.service-link {
+    display: inline-block;
+    color: #232946;
+        font-weight: 600;
+        border-bottom: 3px solid var(--ltblue);
+        margin: 1rem 0;
+}
+
+.service-link:hover {
+    color: var(--ltblue);
+    margin-left: 1rem;
+}
+
 .contact-wrapper {
     background: #F8F8F8;
 }
@@ -366,6 +393,15 @@ section {
         0 2px 2px rgba(0, 0, 0, 0.15),
         0 4px 4px rgba(0, 0, 0, 0.15),
         0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-btn {
+    display: block;
+    background-color: var(--ltblue);
+    text-align: center;
+    max-width: 210px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Products */
@@ -404,7 +440,8 @@ section {
     margin-top: 1rem;
 }
 
-.reach-btn:hover {
+.reach-btn:hover,
+.product-btn:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25),
         0 2px 2px rgba(0, 0, 0, 0.20),
         0 4px 4px rgba(0, 0, 0, 0.15),
@@ -437,6 +474,14 @@ footer a {
     footer p {
         font-size: .8rem;
     }
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -466,6 +511,16 @@ footer a {
 }
 
 @media screen and (max-width: 1151px) {
+    a {
+        font-size: .8rem;
+    }
+
+    .chat-btn {
+        padding: .6rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 899px) {
     .about-container {
         flex-direction: column;
     }
@@ -477,22 +532,10 @@ footer a {
     .about-description {
         width: 100%;
     }
-
-    a {
-        font-size: .8rem;
-    }
-
-    .chat-btn {
-        padding: .6rem 1.2rem;
-    }
 }
 
-@media screen and (max-width: 900px) {
-    .services-container {
-        flex-direction: column;
-    }
-
-    .service-card {
-        width: 100%;
+@media (min-width: 899px) and (max-width: 1028px) {
+    .about-img {
+        width: 55%;
     }
 }
