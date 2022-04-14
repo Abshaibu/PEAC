@@ -15,9 +15,34 @@
 
     <header>
         <div class="container nav-container">
-            <div class="logo">
-                <img src="" alt="logo" class="logo-img">
-            </div>
+            <a class="logo" href="index.html">
+                <img src="./assets/images/logo.PNG" alt="logo" class="logo-img">
+            </a>
+            <nav class="mobile-nav">
+                <button class="toggle-btn"><i class="fas fa-bars"></i></button>
+                <div class="nav-links">
+                    <button class="close-btn cl-btn"><i class="fas fa-times"></i></button>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <button class="chat-btn nav-link" onclick="$crisp.push(['do', 'chat:open'])">contact
+                                us</button>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html" class="nav-link">about us</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="brands.html" class="nav-link">our brands</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="corporateg.html" class="nav-link">corporate
+                                governance</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="services.html" class="nav-link">our
+                                services</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="products.html" class="nav-link">our
+                                products</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <nav>
                 <ul class="nav-items">
                     <li class="nav-item">
@@ -25,14 +50,14 @@
                     </li>
                     <li class="nav-item drop-link"><a class="nav-link">about us <i class="fa fa-chevron-up"></i>
                             <div class="drop-menu">
-                                <a class="drop-about" href="about.html">who we are</a>
+                                <a class="drop-about" href="#about">who we are</a>
                                 <a href="#">our brands</a>
                                 <a href="#">corporate governance</a>
                             </div>
                         </a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html" class="nav-link">our services</a>
+                    <li class="nav-item"><a class="nav-link" href="#services" class="nav-link">our services</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="products.html" class="nav-link">our products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products" class="nav-link">our products</a></li>
                 </ul>
             </nav>
         </div>

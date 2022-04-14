@@ -53,7 +53,7 @@ button,
 .product-btn {
     border: none;
     font-family: 'Raleway',
-    sans-serif;
+        sans-serif;
     font-weight: 500;
     font-size: 1rem;
     padding: 0.8rem;
@@ -70,7 +70,7 @@ button:hover {
 
 nav {
     max-width: 528px;
-    width: 57%;
+    width: 60%;
 }
 
 .nav-link {
@@ -175,13 +175,23 @@ header {
     z-index: 9999;
 }
 
+.logo {
+    width: 24%;
+    display: inherit;
+}
+
 /* HEADER*/
+
+.mobile-nav {
+    display: none;
+}
 
 .close-btn,
 .toggle-btn {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
+    background: var(--ltblue);
     color: #fff;
 }
 
@@ -205,11 +215,12 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background: #b8c1ec;
+    background: var(--ltblue);
     width: 100%;
     justify-content: center;
     padding: .5rem 0 1.8rem;
     transform: translateY(-480px);
+    height: 58vh;
     opacity: 0;
     transition: all .4s ease-in;
 }
@@ -247,17 +258,17 @@ section {
 }
 
 .home-products {
-background-image: url('../images/products.jpg');
-background-position: 25% 75%;
+    background-image: url('../images/products.jpg');
+    background-position: 25% 75%;
 }
 
 .home-services {
-background-image: url('../images/services.jpg');
+    background-image: url('../images/services.jpg');
 }
 
 .home-about {
-background-image: url('../images/about.jpg');
-background-position: 25% 75%;
+    background-image: url('../images/about.jpg');
+    background-position: 25% 75%;
 }
 
 
@@ -370,9 +381,9 @@ background-position: 25% 75%;
 .service-link {
     display: inline-block;
     color: #232946;
-        font-weight: 600;
-        border-bottom: 3px solid var(--ltblue);
-        margin: 1rem 0;
+    font-weight: 600;
+    border-bottom: 3px solid var(--ltblue);
+    margin: 1rem 0;
 }
 
 .service-link:hover {
@@ -480,6 +491,10 @@ footer a {
 
 /*  Media Queries */
 @media screen and (max-width: 768px) {
+    .logo {
+        width: 45%;
+    }
+
     footer a {
         font-size: .8rem;
     }
@@ -525,6 +540,10 @@ footer a {
     .second-home h1 {
         font-size: 2.8rem;
     }
+
+    .logo {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 1151px) {
@@ -549,10 +568,36 @@ footer a {
     .about-description {
         width: 100%;
     }
+
+    .nav-list {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+    }
+
+    .nav-list li {
+        margin-bottom: .8rem;
+    }
+
+    .nav-list .chat-btn {
+        color: #020a14;
+        padding: .6rem 4.5rem;
+    }
 }
 
 @media (min-width: 899px) and (max-width: 1028px) {
     .about-img {
         width: 55%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: end;
     }
 }
