@@ -50,7 +50,7 @@ button {
 }
 
 button,
-.product-btn {
+.view-btn {
     border: none;
     font-family: 'Raleway',
         sans-serif;
@@ -421,7 +421,6 @@ section {
 .product {
     display: grid;
     place-items: center;
-    height: 250px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
@@ -431,6 +430,63 @@ section {
 }
 
 .product-btn {
+    width: 100%;
+    background: var(--ltblue);
+    border-radius: 0 0 5px 5px;
+    color: white;
+}
+
+.product-btn:hover {
+    color: var(--ltsilver);
+}
+
+.order-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(59, 49, 49, 0.137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.4s ease-in;
+}
+
+.show-order {
+    transform: scale(1);
+}
+
+.message-wrapper {
+        max-width: 400px;
+        width: 100%;
+        height: 400px;
+        background: #fff;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+}
+
+.message-btn {
+    margin-top: 1.8rem;
+    background: var(--ltblue);
+    border: 2px solid #fff;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.message-btn:hover {
+    background: #fff;
+    border: 2px solid var(--ltblue);
+    color: var(--ltblue);
+}
+
+.view-btn {
     display: block;
     background-color: var(--ltblue);
     text-align: center;
@@ -476,7 +532,7 @@ section {
 }
 
 .reach-btn:hover,
-.product-btn:hover {
+.view-btn:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25),
         0 2px 2px rgba(0, 0, 0, 0.20),
         0 4px 4px rgba(0, 0, 0, 0.15),
@@ -581,9 +637,9 @@ footer a {
     }
 
     .nav-list {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .nav-list li {
