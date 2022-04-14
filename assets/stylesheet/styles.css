@@ -246,7 +246,7 @@ header {
 
 /*   Sections */
 section {
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 .home {
@@ -594,6 +594,11 @@ footer a {
         color: #020a14;
         padding: .6rem 4.5rem;
         text-decoration: none;
+        position: static;
+    }
+
+    .chat-btn:hover {
+        background: #fff;
     }
 }
 
