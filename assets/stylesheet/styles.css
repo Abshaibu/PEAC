@@ -193,6 +193,9 @@ header {
     border-radius: 50%;
     background: var(--ltblue);
     color: #fff;
+    position: absolute;
+    top: 24px;
+    right: 25px;
 }
 
 .fa-bars,
@@ -214,15 +217,19 @@ header {
 .nav-links {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     background: var(--ltblue);
-    width: 100%;
+    width: 375px;
     justify-content: center;
-    padding: .5rem 0 1.8rem;
-    transform: translateY(-480px);
-    height: 58vh;
+    padding: 0.5rem 0 1.8rem;
+    transform: translateY(-1000px);
+    height: 100vh;
     opacity: 0;
     transition: all .4s ease-in;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .show-navlinks {
