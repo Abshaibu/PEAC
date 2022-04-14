@@ -246,7 +246,7 @@ header {
 
 /*   Sections */
 section {
-    min-height: 100%;
+    min-height: 636px;
 }
 
 .home {
@@ -260,7 +260,7 @@ section {
 }
 
 .second-home {
-    min-height: 40vh;
+    min-height: 255px;
     background-image: url('../images/placeholder.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -442,7 +442,7 @@ section {
 /* Products */
 
 .reach-us {
-    min-height: 50vh;
+    min-height: 318px;
     align-items: center;
     display: flex;
 }
