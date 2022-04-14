@@ -198,6 +198,10 @@ header {
     right: 25px;
 }
 
+.toggle-btn {
+    top: 13px;
+}
+
 .fa-bars,
 .fa-times {
     font-size: 22px;
@@ -589,6 +593,7 @@ footer a {
     .nav-list .chat-btn {
         color: #020a14;
         padding: .6rem 4.5rem;
+        text-decoration: none;
     }
 }
 
