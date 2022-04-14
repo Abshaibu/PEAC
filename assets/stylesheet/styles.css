@@ -238,7 +238,7 @@ section {
 }
 
 .second-home {
-    min-height: 30vh;
+    min-height: 40vh;
     background-image: url('../images/placeholder.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -246,6 +246,19 @@ section {
     display: grid;
 }
 
+.home-products {
+background-image: url('../images/products.jpg');
+background-position: 25% 75%;
+}
+
+.home-services {
+background-image: url('../images/services.jpg');
+}
+
+.home-about {
+background-image: url('../images/about.jpg');
+background-position: 25% 75%;
+}
 
 
 .intro {
@@ -507,6 +520,10 @@ footer a {
         font-size: 2rem;
         text-align: center;
         font-size: 1.4rem;
+    }
+
+    .second-home h1 {
+        font-size: 2.8rem;
     }
 }
 
