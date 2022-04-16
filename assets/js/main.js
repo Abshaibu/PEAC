@@ -42,10 +42,6 @@ productBtn.forEach((item) => {
     });
 });
 
-messageBtn.addEventListener('click', () => { 
-    orderMessage.classList.remove('show-order');
-});
-
 orderMessage.addEventListener('click', () => {
     orderMessage.classList.remove('show-order');
 });
@@ -53,9 +49,22 @@ orderMessage.addEventListener('click', () => {
 // products overview
 prdTwo.forEach((item) => {
     item.addEventListener('click', () => {
+        const prdImg = document.querySelector('.prdt-img');
+        const previewImg = item.previousElementSibling.getAttribute('src');
+        prdImg.setAttribute('src', previewImg);
         orderMessage.classList.add('show-order');
     });
 });
+
+messageBtn.addEventListener('click', () => {
+    orderMessage.classList.remove('show-order');
+});
+
+// close product preview
+function closePreview() {
+    $crisp.push(['do', 'chat:open']);
+    orderMessage.classList.add('show-order');
+};
 
 // date
 const date = document.querySelector('.date');
