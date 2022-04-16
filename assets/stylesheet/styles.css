@@ -640,8 +640,7 @@ section {
 
 footer {
     background: #232946;
-    height: 150px;
-    text-align: center;
+    min-height: 200px;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -650,6 +649,35 @@ footer {
 footer a {
     font-weight: 300;
     color: var(--dksilver);
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+    align-items: center;
+}
+
+.contact-details a {
+display: block;
+font-weight: 400;
+color: #fff;
+font-size: 1.1rem;
+text-transform: none;
+margin-bottom: .6rem;
+}
+
+.socials a {
+    display: inline-block;
+}
+
+.fas {
+    margin-right: 0.5rem;
+}
+
+.fab {
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 /*  Media Queries */
@@ -694,6 +722,21 @@ footer a {
 
     .footer-nav p {
         order: 3;
+    }
+    footer {
+        padding: 2rem;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-details a {
+        font-size: 1rem;
+    }
+
+    .socials {
+        margin-top: 1rem;
     }
 }
 
