@@ -50,7 +50,12 @@ orderMessage.addEventListener('click', () => {
 prdTwo.forEach((item) => {
     item.addEventListener('click', () => {
         const prdImg = document.querySelector('.prdt-img');
-        const previewImg = item.previousElementSibling.previousElementSibling.getAttribute('src');
+        let previewImg = item;
+        if (item.parentElement.classList.contains('val')) {
+            previewImg = item.previousElementSibling.previousElementSibling.getAttribute('src');
+        } else {
+            previewImg = item.previousElementSibling.getAttribute('src');
+        }
         prdImg.setAttribute('src', previewImg);
         orderMessage.classList.add('show-order');
     });
