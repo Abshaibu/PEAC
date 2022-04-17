@@ -50,7 +50,7 @@ orderMessage.addEventListener('click', () => {
 prdTwo.forEach((item) => {
     item.addEventListener('click', () => {
         const prdImg = document.querySelector('.prdt-img');
-        const previewImg = item.previousElementSibling.getAttribute('src');
+        const previewImg = item.previousElementSibling.previousElementSibling.getAttribute('src');
         prdImg.setAttribute('src', previewImg);
         orderMessage.classList.add('show-order');
     });

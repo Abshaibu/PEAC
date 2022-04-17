@@ -259,6 +259,13 @@ section {
     position: relative;
 }
 
+.home-phone {
+        position: absolute;
+        top: 6rem;
+        font-size: 1.2rem;
+        z-index: 1;
+}
+
 .home-overlay {
     position: absolute;
     top: 0;
@@ -513,15 +520,6 @@ section {
     color: var(--ltblue);
 }
 
-.view-btn {
-    display: block;
-    background-color: var(--ltblue);
-    text-align: center;
-    max-width: 210px;
-    width: 80%;
-    margin: 0 auto;
-}
-
 /* Products */
 
 .reach-us {
@@ -635,6 +633,15 @@ section {
 
 .preview .message-wrapper {
     align-items: center;
+}
+
+.product-name {
+    font-weight: 600;
+}
+
+.product-list li {
+    font-size: .8rem;
+    padding-left: 0.5rem;
 }
 
 /*   Footer*/
