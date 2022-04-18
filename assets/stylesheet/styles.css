@@ -49,8 +49,7 @@ button {
     border: none;
 }
 
-button,
-.view-btn {
+button {
     border: none;
     font-family: 'Raleway',
         sans-serif;
@@ -450,74 +449,15 @@ section {
         0 8px 8px rgba(0, 0, 0, 0.15);
 }
 
-.prd-two,
-.product-btn {
+.prd-two {
     width: 100%;
     background: var(--ltblue);
     border-radius: 0 0 5px 5px;
     color: white;
 }
 
-.prd-two:hover,
-.product-btn:hover {
+.prd-two:hover {
     color: var(--ltsilver);
-}
-
-.order-message {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: 3;
-    background: rgba(59, 49, 49, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0);
-    transition: all 0.5s ease-in;
-    overflow: scroll;
-}
-
-.show-order {
-    transform: scale(1);
-}
-
-.message-wrapper {
-        max-width: 400px;
-        width: 90%;
-        min-height: 400px;
-        background: #fff;
-        border-radius: 5px;
-        font-size: 1.1rem;
-        z-index: 999;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2rem;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
-            0 2px 2px rgba(0, 0, 0, 0.15),
-            0 4px 4px rgba(0, 0, 0, 0.15),
-            0 8px 8px rgba(0, 0, 0, 0.15);
-}
-
-.preview .message-wrapper {
-    max-width: 700px;
-}
-
-.message-btn {
-    margin-top: 1.8rem;
-    background: var(--ltblue);
-    border: 2px solid #fff;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.message-btn:hover {
-    background: #fff;
-    border: 2px solid var(--ltblue);
-    color: var(--ltblue);
 }
 
 /* Products */
@@ -556,8 +496,7 @@ section {
     margin-top: 1rem;
 }
 
-.reach-btn:hover,
-.view-btn:hover {
+.reach-btn:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25),
         0 2px 2px rgba(0, 0, 0, 0.20),
         0 4px 4px rgba(0, 0, 0, 0.15),
@@ -646,6 +585,35 @@ section {
 
 .home-phone a {
     margin-right: 1rem;
+}
+
+.corporate {
+    margin: 5rem auto 0;
+    max-width: 742px;
+    width: 90%;
+    text-align: left !important;
+}
+
+.corporate h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: left !important;
+}
+
+.terms h2 {
+    padding-bottom: 5rem;
+}
+
+.corporate li {
+    margin-bottom: 1.8rem;
+}
+
+h2 ~ p {
+    margin-bottom: 3rem;
+}
+
+.corporate h4 {
+    margin-bottom: .5rem;
 }
 
 /*   Footer*/
@@ -749,6 +717,10 @@ margin-bottom: .6rem;
 
     .socials {
         margin-top: 1rem;
+    }
+
+    .corporate h2 {
+        font-size: 1.2rem;
     }
 }
 
