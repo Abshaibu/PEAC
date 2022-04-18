@@ -1,10 +1,6 @@
 const toggleBtn = document.querySelector('.toggle-btn');
 const navLinks = document.querySelector('.nav-links');
 const closeBtn = document.querySelector('.cl-btn');
-const productBtn = document.querySelectorAll('.product-btn');
-const prdTwo = document.querySelectorAll('.prd-two');
-const orderMessage = document.querySelector('.order-message');
-const messageBtn = document.querySelector('.message-btn');
 const links = document.querySelectorAll('.nav-link');
 
 // products tabs
@@ -33,36 +29,6 @@ links.forEach((item) => {
     item.addEventListener('click', () => {
         navLinks.classList.remove('show-navlinks');
     });
-});
-
-// message on order
-productBtn.forEach((item) => {
-    item.addEventListener('click', () => {
-        orderMessage.classList.add('show-order');
-    });
-});
-
-orderMessage.addEventListener('click', () => {
-    orderMessage.classList.remove('show-order');
-});
-
-// products overview
-prdTwo.forEach((item) => {
-    item.addEventListener('click', () => {
-        const prdImg = document.querySelector('.prdt-img');
-        let previewImg = item;
-        if (item.parentElement.classList.contains('val')) {
-            previewImg = item.previousElementSibling.previousElementSibling.getAttribute('src');
-        } else {
-            previewImg = item.previousElementSibling.getAttribute('src');
-        }
-        prdImg.setAttribute('src', previewImg);
-        orderMessage.classList.add('show-order');
-    });
-});
-
-messageBtn.addEventListener('click', () => {
-    orderMessage.classList.remove('show-order');
 });
 
 // close product preview

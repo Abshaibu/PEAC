@@ -137,7 +137,7 @@ footer,
     background-color: #fff;
     border-radius: 5px;
     width: 200px;
-    height: 130px;
+    height: 100px;
     padding-left: 1rem;
     transition: all 0.4s ease-in;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
@@ -644,6 +644,10 @@ section {
     padding-left: 0.5rem;
 }
 
+.home-phone a {
+    margin-right: 1rem;
+}
+
 /*   Footer*/
 
 footer {
@@ -764,6 +768,11 @@ margin-bottom: .6rem;
 
     .logo {
         width: 70%;
+    }
+
+    .home-phone a {
+        margin: 0 1rem .5rem 0;
+        display: block;
     }
 }
 
