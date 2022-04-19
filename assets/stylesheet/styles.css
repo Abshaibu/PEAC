@@ -815,3 +815,10 @@ margin-bottom: .6rem;
         justify-content: end;
     }
 }
+.abt,
+.about-us,
+.services-wrapper,
+.contact-wrapper,
+.reach-us {
+    background: #292f3d !important;
+}
