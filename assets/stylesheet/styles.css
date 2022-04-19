@@ -254,7 +254,6 @@ section {
     background-repeat: no-repeat;
     place-items: center;
     display: grid;
-    margin-bottom: 3rem;
     position: relative;
 }
 
@@ -617,11 +616,6 @@ h2 ~ p {
     margin-bottom: .5rem;
 }
 
-.texts {
-    background: #F2F4F6;
-    color: #7E8A98;
-}
-
 /*   Footer*/
 
 footer {
@@ -821,4 +815,8 @@ margin-bottom: .6rem;
 .contact-wrapper,
 .reach-us {
     background: #b34b00;
+}
+
+.abt {
+    color: #f1cccc;
 }
