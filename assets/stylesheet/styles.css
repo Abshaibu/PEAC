@@ -814,9 +814,9 @@ margin-bottom: .6rem;
 .services-wrapper,
 .contact-wrapper,
 .reach-us {
-    background: #b34b00;
+    background: var(--ltorange);
 }
 
 .abt {
-    color: #f1cccc;
+    color: white;
 }
