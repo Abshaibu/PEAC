@@ -33,6 +33,7 @@ ul {
 
 img {
     width: 100%;
+    pointer-events: none;
 }
 
 a {
@@ -551,7 +552,7 @@ section {
 
 .tab p {
     color: rgba(0, 0, 0, 0.6);
-    text-align: justify;
+    padding: 0.2rem;
 }
 
 .tab-active {
@@ -616,6 +617,22 @@ h2 ~ p {
     margin-bottom: .5rem;
 }
 
+.abt,
+.about-us,
+.services-wrapper,
+.contact-wrapper,
+.reach-us {
+    background: var(--ltorange);
+}
+
+.abt {
+    color: white;
+}
+
+.crg-list {
+    list-style-type: disc;
+}
+
 /*   Footer*/
 
 footer {
@@ -649,6 +666,11 @@ margin-bottom: .6rem;
 
 .socials a {
     display: inline-block;
+    transition: all .3s ease;
+}
+
+.socials a:hover {
+    transform: translateY(-10px);
 }
 
 .fas {
@@ -659,6 +681,7 @@ margin-bottom: .6rem;
     font-size: 1.5rem;
     margin-right: 1.5rem;
 }
+
 
 /*  Media Queries */
 @media screen and (max-width: 768px) {
@@ -741,11 +764,6 @@ margin-bottom: .6rem;
     .logo {
         width: 70%;
     }
-
-    .home-phone a {
-        margin: 0 1rem .5rem 0;
-        display: block;
-    }
 }
 
 @media screen and (max-width: 1151px) {
@@ -808,15 +826,9 @@ margin-bottom: .6rem;
         display: flex;
         justify-content: end;
     }
-}
-.abt,
-.about-us,
-.services-wrapper,
-.contact-wrapper,
-.reach-us {
-    background: var(--ltorange);
-}
 
-.abt {
-    color: white;
+    .home-phone a {
+        margin: 0 1rem .5rem 0;
+        display: block;
+    }
 }
