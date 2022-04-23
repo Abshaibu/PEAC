@@ -3,16 +3,6 @@ const navLinks = document.querySelector('.nav-links');
 const closeBtn = document.querySelector('.cl-btn');
 const links = document.querySelectorAll('.nav-link');
 
-// products tabs
-$(document).ready(function () {
-    $('.tab-a').click(function () {
-        $(".tab").removeClass('tab-active');
-        $(".tab[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
-        $(".tab-a").removeClass('active-a');
-        $(this).parent().find(".tab-a").addClass('active-a');
-    });
-});
-
 // menu toggler
 toggleBtn.addEventListener('click', (e) => {
     navLinks.classList.add('show-navlinks');
@@ -34,3 +24,13 @@ links.forEach((item) => {
 // date
 const date = document.querySelector('.date');
 date.innerHTML = new Date().getFullYear();
+
+// products tabs
+$(document).ready(function () {
+    $('.tab-a').click(function () {
+        $(".tab").removeClass('tab-active');
+        $(".tab[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
+        $(".tab-a").removeClass('active-a');
+        $(this).parent().find(".tab-a").addClass('active-a');
+    });
+});
