@@ -25,7 +25,7 @@
                     <button class="close-btn cl-btn"><i class="fas fa-times"></i></button>
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <button class="chat-btn nav-link" onclick="$crisp.push(['do', 'chat:open'])">contact
+                            <button class="chat-btn nav-link" onclick="javascript:void(Tawk_API.toggle())">contact
                                 us</button>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="about.html" class="nav-link">about us</a>
@@ -45,7 +45,7 @@
             <nav>
                 <ul class="nav-items">
                     <li class="nav-item">
-                        <button class="chat-btn" onclick="$crisp.push(['do', 'chat:open'])">contact us</button>
+                        <button class="chat-btn" onclick="javascript:void(Tawk_API.toggle())">contact us</button>
                     </li>
                     <li class="nav-item drop-link"><a class="nav-link">about us <i class="fa fa-chevron-up"></i>
                             <div class="drop-menu">
@@ -99,7 +99,7 @@
                 <div class="reach-wrapper container">
                     <div class="reach-us-content">
                         <h3>Want to place an order or simply make an inquiry?</h3>
-                        <button class="reach-btn" onclick="$crisp.push(['do', 'chat:open'])">Chat with us</button>
+                        <button class="reach-btn" onclick="javascript:void(Tawk_API.toggle())">Chat with us</button>
                     </div>
                 </div>
             </section>
@@ -129,7 +129,6 @@
         </div>
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {},

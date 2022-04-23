@@ -31,12 +31,6 @@ links.forEach((item) => {
     });
 });
 
-// close product preview
-function closePreview() {
-    $crisp.push(['do', 'chat:open']);
-    orderMessage.classList.add('show-order');
-};
-
 // date
 const date = document.querySelector('.date');
 date.innerHTML = new Date().getFullYear();
